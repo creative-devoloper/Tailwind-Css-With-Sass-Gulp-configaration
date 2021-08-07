@@ -18,7 +18,7 @@ function css() {
 }
 
 function sees() {
-  return watch(['./src/**/*.scss', './*.html'], parallel( css ) );
+  return watch(['./src/**/*.scss', './**/*.html'], parallel( css ) );
 }
 
 exports.default = parallel( css );
